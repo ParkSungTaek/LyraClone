@@ -11,7 +11,7 @@
  * 얘는 일단 맵을 들고있어 
  * 또 Experience 를 들고있어 
  */
-UCLASS()
+UCLASS(BlueprintType)
 class LYRACLONE_API ULyCUserFacingExperience : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
@@ -20,7 +20,7 @@ public :
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Experience, meta = (AllowTypes = "Map"))
 	FPrimaryAssetId MapID;
 
-	/** the specific map to load */
+	/** The gameplay experience to load */
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = Experience, meta = (AllowTypes = "LyCExperienceDefinition"))
 	FPrimaryAssetId ExperienceID;
 

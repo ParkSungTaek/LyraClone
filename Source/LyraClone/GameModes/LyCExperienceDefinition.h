@@ -10,8 +10,10 @@ class ULyCPawnData;
 
 /**
  * 폰에대한 정보를 들고있음
+ * + GameFeaturesToEnable - 해당 게임 모드에 필요한 GameFeature plugin을 위한 연결고리 역할을 한다.
+ * 
  */
-UCLASS()
+UCLASS(BlueprintType, Const)
 class LYRACLONE_API ULyCExperienceDefinition : public UPrimaryDataAsset
 {
 	GENERATED_BODY()

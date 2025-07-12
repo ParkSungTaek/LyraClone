@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Config = Game)
 class LYRACLONE_API ULyCAssetManager : public UAssetManager
 {
 	GENERATED_BODY()
@@ -44,7 +44,6 @@ public:
 
 	//** [THREAD-SAFE] 메모리에 로딩된 에셋 캐싱 */ 
 	void AddLoadedAsset(const UObject* Asest);
-
 
 	// GC제외를 위한 캐싱 (여기서 포인터 물고있으면 GC에 안잡히겠지 라는 마인드)
 	UPROPERTY()
